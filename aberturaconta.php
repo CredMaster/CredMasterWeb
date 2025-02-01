@@ -324,6 +324,29 @@
             background-color: #74727236;
         }
 
+        footer {
+            padding: 5%;
+            color: white;
+            display: flex;
+            text-align: center;
+            margin-top: 10%;
+            flex-direction: column;
+            align-items: center;
+            background-color: #01051b;
+        }
+
+        .links a {
+            color: white;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            text-decoration: underline;
+        }
+
+        .links ul {
+            list-style-type: none;
+        }
+
         @media(max-width: 1000px) {
             .container {
                 max-width: 1500px !important;
@@ -355,6 +378,19 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            footer {
+                margin-top: 10%;
+            }
+
+            footer h3 {
+                font-size: 3vw;
+            }
+
+            footer a,
+            p {
+                font-size: 2.5vw;
+            }
         }
     </style>
 
@@ -381,22 +417,20 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="index.php">Home</a>
-                        <a class="nav-item nav-link"
+                        <a class="nav-item nav-link" target=”_blank”
                             href="https://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">Simulação</a>
                         <div class="nav-item dropdown" class="nav-item nav-link">
-                            <a class="nav-link dropdown-toggle" id="process-menu" id="navbardrop"
-                                data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" id="process-menu" id="navbardrop" data-toggle="dropdown">
                                 Serviços
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" style="color:#0f143c;" href="habitacao.php">Habitação</a>
                                 <a class="dropdown-item" style="color:#0f143c;" href="emprestimos.php">Empréstimos</a>
-                                <a class="dropdown-item" style="color:#0f143c;" href="cartoes.php">Cartões</a>
+                                <a class="dropdown-item" style="color:#0f143c;" href="aberturaconta.php">Cartões</a>
                                 <a class="dropdown-item" style="color:#0f143c;" href="consorcio.php">Consórcio</a>
                             </div>
                         </div>
                         <a class="nav-item nav-link" href="analisecredito.php">Análise de Crédito</a>
-                        <a class="nav-item nav-link" href="cartoes.php">Abertura de Conta</a>
                     </div>
                 </div>
             </nav>
@@ -414,7 +448,7 @@
                     <div class="col-md-6">
                         <div class="bloco0">
                             <div class="img">
-                                <img src="./img/cartoes_cartoes.png" alt="cartões">
+                                <img src="./img/cartao_cartoes.png" alt="cartões">
                             </div>
 
                             <p id="destaque"> A Caixa tem várias opções:</p>
@@ -471,7 +505,7 @@
                             <form action="banco_cartoes.php" method="POST" enctype="multipart/form-data">
                                 <div class="form-header">
                                     <div class="title">
-                                        <h1>Envio dos dados</h1>
+                                        <h1>Solicitar cartão</h1>
                                     </div>
                                 </div>
 
@@ -535,6 +569,21 @@
         </div>
     </main>
 
+    <footer>
+        <div class="footer-section links">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a
+                        href="https://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">Simulação</a>
+                </li>
+                <li><a href="index.php#service-area">Serviços</a></li>
+                <li><a href="analisecredito.php">Análise de Crédito</a></li>
+                <li><a href="aberturaconta.php">Abertura de Conta</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 CredMasterJardim.com.br | Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

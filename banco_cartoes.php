@@ -8,13 +8,6 @@ $telefone = $_POST["telefone"];
 $endereco = $_POST["endereco"];
 $renda = $_POST["renda"];
 
-echo $nome . '<br>';
-echo $cpf . '<br>';
-echo $email . '<br>';
-echo $telefone . '<br>';
-echo $endereco . '<br>';
-echo $renda . '<br>';
-
 try {
     $sql = "INSERT INTO cartoes(nome, cpf, email, telefone, endereco, renda) 
             VALUES(:n, :c, :e, :t, :en, :r)";
@@ -27,11 +20,12 @@ try {
     $insercao->bindParam(':r', $renda);
 
     if ($insercao->execute()) {
-        echo "Dados inseridos com sucesso!";
+        echo 'Successo! Os dados foram inseridos com sucesso.';
+        header("refresh:3;url=aberturaconta.php");
+        exit;
     } else {
-        echo "Erro ao inserir os dados.";
+        echo 'Erro! Erro ao inserir os dados.';
     }
 } catch (PDOException $e) {
     echo "Erro: " . $e->getMessage();
 }
-?>

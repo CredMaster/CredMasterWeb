@@ -399,8 +399,7 @@
                         <a class="nav-item nav-link" target=”_blank”
                             href="https://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">Simulação</a>
                         <div class="nav-item dropdown" class="nav-item nav-link">
-                            <a class="nav-link dropdown-toggle" id="process-menu" id="navbardrop"
-                                data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle" id="process-menu" id="navbardrop" data-toggle="dropdown">
                                 Serviços
                             </a>
                             <div class="dropdown-menu">
@@ -411,9 +410,8 @@
                             </div>
                         </div>
                         <a class="nav-item nav-link" href="analisecredito.php">Análise de Crédito</a>
-                        <a class="nav-item nav-link" href="aberturaconta.php">Abertura de Conta</a>
                     </div>
-                </div>
+                </div> 
             </nav>
         </div>
     </header>
@@ -561,32 +559,22 @@
     </main>
 
     <footer>
-        <div class="footer-contant">
-            <div class="footer-section links">
-                <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a target=”_blank”
-                            href="https://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">Simulação</a>
-                    </li>
-                    <li><a href="index.php#service-area">Serviços</a></li>
-                    <li><a href="analisecredito.php">Análise de Crédito</a></li>
-                    <li><a href="aberturaconta.php">Abertura de Conta</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Siga-nos</h3>
-                <div class="social">
-                    <a href="https://www.facebook.com/share/UEM2LnySiyDY5VLv/" target=”_blank”><i class="fab fa-facebook-f"></i></a>
-                    <a href="http://Instagram.com/correspondente__credmaster" target=”_blank”><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 CredMasterJardim.com.br | Todos os direitos reservados.
-        </div>
-    </footer>
+      <div class="footer-section links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a
+              href="https://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">Simulação</a>
+          </li>
+          <li><a href="index.php#service-area">Serviços</a></li>
+          <li><a href="analisecredito.php">Análise de Crédito</a></li>
+          <li><a href="aberturaconta.php">Abertura de Conta</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 CredMasterJardim.com.br | Todos os direitos reservados.</p>
+      </div>
+  </footer>
 </body>
 
 </html>

@@ -13,12 +13,6 @@ $foto2 = $_FILES["foto2"];
 $foto3 = $_FILES["foto3"];
 $foto4 = $_FILES["foto4"];
 
-// Exibir os dados recebidos para depuração
-echo $nome . '<br>';
-echo $email . '<br>';
-echo $telefone . '<br>';
-echo $telefone1 . '<br>';
-
 $novo_nome = '';
 $novo_nome1 = '';
 $novo_nome2 = '';
@@ -28,7 +22,8 @@ $novo_nome4 = '';
 $diretorio = "fotos/"; // Pasta onde os arquivos serão salvos
 
 // Função para salvar arquivos e retornar o nome gerado
-function salvarArquivo($arquivo, $diretorio) {
+function salvarArquivo($arquivo, $diretorio)
+{
     if (isset($arquivo) && $arquivo['error'] === UPLOAD_ERR_OK) {
         $extensao = strtolower(pathinfo($arquivo['name'], PATHINFO_EXTENSION));
         $novo_nome = uniqid() . "." . $extensao;
@@ -63,11 +58,17 @@ try {
     $insercao->bindParam(':f4', $novo_nome4);
 
     if ($insercao->execute()) {
-        echo "Dados inseridos com sucesso!";
+        // Se a execução for bem-sucedida
+        echo 'Successo! Os dados foram inseridos com sucesso.';
+        // Aguarda 3 segundos para exibir a mensagem e depois redireciona
+        header("refresh:3;url=analisecredito.php"); // Redireciona após 3 segundos
+        exit;
     } else {
-        echo "Erro ao inserir os dados.";
+        // Se houver erro na inserção
+        echo 'Erro! Erro ao inserir os dados.';
     }
 } catch (PDOException $e) {
+    // Se houver exceção no banco de dados
     echo "Erro: " . $e->getMessage();
 }
 ?>

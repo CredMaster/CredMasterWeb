@@ -216,7 +216,6 @@
               </div>
             </div>
             <a class="nav-item nav-link" href="analisecredito.php">Análise de Crédito</a>
-            <a class="nav-item nav-link" href="aberturaconta.php">Abertura de Conta</a>
           </div>
         </div>
       </nav>
@@ -478,6 +477,11 @@
                   imóvel, pode ser paga com recursos próprios ou do FGTS. O financiamento corresponde à diferença entre
                   o valor do imóvel e a entrada. O saldo devedor é o montante do financiamento ainda a ser pago.</div>
               </div>
+
+              <div class="faq-item">
+                <div class="faq-question">Qual linha de crédito da Caixa permite obter até 60% do valor de avaliação do imóvel, utilizando-o como garantia?</div>
+                <div class="faq-answer">A linha de crédito Real Fácil da Caixa permite que o cliente obtenha até 60% do valor de avaliação do imóvel, utilizando-o como garantia. Essa modalidade oferece taxas de juros mais atrativas e prazos flexíveis para pagamento, sendo uma alternativa vantajosa para quem precisa de um valor maior com condições mais acessíveis.</div>
+              </div>
             </div>
           </div>
         </div>
@@ -524,38 +528,29 @@
   </main>
 
   <footer>
-    <div class="footer-contant">
-      <div class="footer-section links">
-        <h3>Links Rápidos</h3>
-        <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a
-              href="https://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">Simulação</a>
-          </li>
-          <li><a href="index.php#service-area">Serviços</a></li>
-          <li><a href="analisecredito.php">Análise de Crédito</a></li>
-          <li><a href="aberturaconta.php">Abertura de Conta</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h3>Siga-nos</h3>
-        <div class="social">
-          <a href="https://www.facebook.com/share/UEM2LnySiyDY5VLv/"><i class="fab fa-facebook-f"></i></a>
-          <a href="http://Instagram.com/correspondente__credmaster"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
+    <div class="footer-section links">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a
+            href="https://www8.caixa.gov.br/siopiinternet-web/simulaOperacaoInternet.do?method=inicializarCasoUso">Simulação</a>
+        </li>
+        <li><a href="index.php#service-area">Serviços</a></li>
+        <li><a href="analisecredito.php">Análise de Crédito</a></li>
+        <li><a href="aberturaconta.php">Abertura de Conta</a></li>
+      </ul>
     </div>
     <div class="footer-bottom">
-      &copy; 2024 CredMasterJardim.com.br | Todos os direitos reservados.
+      <p>&copy; 2024 CredMasterJardim.com.br | Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <script>
-
     /*Parallax*/
-    setTimeout(function () {
-      $('#data-area').parallax({ imageSrc: 'img/cont.png' });
+    setTimeout(function() {
+      $('#data-area').parallax({
+        imageSrc: 'img/cont.png'
+      });
     }, 250);
 
     const faqQuestions = document.querySelectorAll('.faq-question');
